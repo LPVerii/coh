@@ -1,0 +1,23 @@
+{
+    "dataset_id": "ambri",
+    "units_dataset_name":"units",
+    "units_table_name":"ambri",
+    "feedback_table_name":"anomaly_user_feedback",
+    "cols_from_anomaly_tab": [
+        "cell_id",
+        "severity",
+        "class",
+        "anomaly_id",
+        "start_ts",
+        "end_ts"
+    ],
+    "init_cols_for_plot": [
+        "current",
+        "voltage",
+        "temperature"
+    ],
+    "timestamp_column_name": "ts",
+    "label_column_name": "Label",
+    "scale_data": true,
+    "port_number": 8080
+}

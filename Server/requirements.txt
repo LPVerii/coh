@@ -1,0 +1,9 @@
+asyncio
+websockets
+datetime 
+numpy
+pandas
+repackage
+pathlib
+google-cloud
+pandas_gbq
