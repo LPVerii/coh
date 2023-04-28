@@ -1,1 +1,36 @@
+backend: # PYTHON
+  repo_path: Server
+  type: backend
+  url_path: /api
+  dev: ["python","main.py"] # your command list here (customize for packages)
+  prod: ["python","main.py"]  # runs in deployed env.
 
+#   # Note if resource values are updated out of ch, ch will only edit the fields below, "won't treat config changes as drift"
+#   resources:  # Cannot provision BQ
+#     - name: db1
+#       engine: mysql
+#       version: 8.0
+#       type: database
+#     - name: redis
+#       engine: redis
+#       version: 4
+#       type: cache
+#     - name: test_bucket
+#       type: object_storage
+#       cors:
+#         - allowed_methods: ["GET", "POST", "PUT", "DELETE"]
+#           allowed_origins: ["www.example.com"]
+#         - allowed_methods: ["GET"]
+#           allowed_origins: ["*"]
+
+# frontend: # NEXT
+#   repo_path: FrontEnd
+#   type: backend
+#   url_path: /
+#   local_packages: ["node_modules"]
+#   dev: ["npm","install", "&&", "npm", "run", "dev"] # your command list here (customize for packages)
+#   prod: ["npm","install", "&&", "npm", "run", "build", "&&", "npm", "run", "start"] # runs in deployed env.
+#   system: 
+#     cpu: 2
+#     memory: "8G"
+# Note if resource values are updated out of ch, ch will only edit the fields below, "won't treat config changes as drift"
